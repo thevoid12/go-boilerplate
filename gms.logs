@@ -1,0 +1,2 @@
+{"level":"info","ts":"2024-08-15T11:53:31.769+0530","caller":"good-morning-sunshine/main.go:31","msg":"this is a test logger"}
+{"level":"error","ts":"2024-08-15T11:53:35.400+0530","caller":"good-morning-sunshine/main.go:33","msg":"this is a big error%!(EXTRA string=main.main, *errors.errorString=this is a generated error)","stacktrace":"main.main\n\te:/dev/good-morning-sunshine/main.go:33\nruntime.main\n\tC:/Program Files/Go/src/runtime/proc.go:271"}

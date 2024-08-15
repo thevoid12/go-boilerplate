@@ -1,2 +1,37 @@
 {"level":"info","ts":"2024-08-15T11:53:31.769+0530","caller":"good-morning-sunshine/main.go:31","msg":"this is a test logger"}
 {"level":"error","ts":"2024-08-15T11:53:35.400+0530","caller":"good-morning-sunshine/main.go:33","msg":"this is a big error%!(EXTRA string=main.main, *errors.errorString=this is a generated error)","stacktrace":"main.main\n\te:/dev/good-morning-sunshine/main.go:33\nruntime.main\n\tC:/Program Files/Go/src/runtime/proc.go:271"}
+{"level":"info","ts":"2024-08-15T14:31:00.375+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:31:03.619+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:33:28.119+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:33:31.536+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:40:26.401+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:40:30.183+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:41:21.191+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:41:21.191+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:42:34.889+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:42:34.889+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:43:59.808+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:43:59.809+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:46:32.428+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:46:32.429+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:49:27.469+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:49:27.470+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:53:00.262+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:53:00.262+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:54:23.407+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:54:23.409+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T14:55:49.857+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T14:55:49.858+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T15:00:35.611+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T15:00:35.612+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T15:05:17.818+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T15:05:17.819+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T15:06:24.878+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T15:06:24.879+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T15:08:16.322+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T15:08:16.323+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T15:09:27.544+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T15:09:27.544+0530","caller":"routes/routes.go:12","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T16:14:23.961+0530","caller":"good-morning-sunshine/main.go:32","msg":"this is a test logger"}
+{"level":"info","ts":"2024-08-15T16:14:23.963+0530","caller":"routes/routes.go:13","msg":"Initializing logger"}
+{"level":"info","ts":"2024-08-15T16:14:38.562+0530","caller":"handlers/index.go:16","msg":"this is a test info"}

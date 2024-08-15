@@ -3,8 +3,8 @@
     "filepath":"gms.logs",
     "level":"debug"
   },
-  "test":"this is a test",
-  "test nested":{
-    "a":"val"
+  "app":{
+    "port":"8080",
+    "uiTemplates":"client/ui/templates/"
   }
 }

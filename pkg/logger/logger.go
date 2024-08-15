@@ -3,6 +3,8 @@
 package logs
 
 import (
+	"context"
+	constants "gms/constant"
 	"os"
 
 	"github.com/spf13/viper"
@@ -32,4 +34,20 @@ func InitializeLogger() (*zap.Logger, error) {
 	logger := zap.New(core, zap.AddCaller(), zap.AddStacktrace(zapcore.ErrorLevel))
 
 	return logger, nil
+}
+
+func SetLoggerctx(ctx context.Context, l *zap.Logger) context.Context {
+	return context.WithValue(ctx, constants.CONTEXT_KEY_LOGGER, l)
+}
+
+func GetLoggerctx(ctx context.Context) (l *zap.Logger) {
+	val := ctx.Value(constants.CONTEXT_KEY_LOGGER)
+	if val == nil {
+		return nil
+	}
+	l, ok := val.(*zap.Logger)
+	if !ok {
+		return nil
+	}
+	return l
 }

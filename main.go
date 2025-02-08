@@ -4,6 +4,7 @@ import (
 	"context"
 	"gobp/web/routes"
 
+	dbpkg "gobp/pkg/db"
 	logs "gobp/pkg/logger"
 	"log"
 
@@ -41,6 +42,12 @@ func main() {
 	ctx = logs.SetLoggerctx(ctx, l)
 
 	l.Sugar().Info("cache initialized successfully")
+
+	db, err := dbpkg.InitDB()
+	if err != nil {
+		log.Fatalf("Could not initialize database: %v", err)
+	}
+	defer db.Db.Close()
 
 	route := routes.Initialize(ctx, l)
 	route.Run(":" + viper.GetString("app.port"))

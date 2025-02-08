@@ -31,7 +31,7 @@ var defaultDSN = fmt.Sprintf("postgres://%s:%s@%s:%s/postgres?sslmode=disable",
 var targetDSN = fmt.Sprintf("postgres://%s:%s@%s:%s/%s?sslmode=disable",
 	dbUser, dbPassword, dbHost, dbPort, dbName)
 
-// InitDB initializes the database connection and checks if the DB exists.
+// InitDB initializes the database connection with connection pooling configurations
 func InitDB() (*Dbconn, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
@@ -43,13 +43,13 @@ func InitDB() (*Dbconn, error) {
 	}
 	defer conn.Close()
 
-	// Check if database exists
+	// Check if the database exists
 	exists, err := databaseExists(ctx, &Dbconn{Db: conn}, dbName)
 	if err != nil {
 		return nil, fmt.Errorf("failed to check database existence: %v", err)
 	}
 
-	// Create database if it doesn't exist
+	// Create the database if it doesn't exist
 	if !exists {
 		log.Printf("Database %s does not exist. Creating it...", dbName)
 		if err := createDatabase(ctx, &Dbconn{Db: conn}, dbName); err != nil {
@@ -58,8 +58,21 @@ func InitDB() (*Dbconn, error) {
 		log.Println("Database created successfully!")
 	}
 
-	// Now, connect to the actual database
-	pool, err := pgxpool.New(ctx, targetDSN)
+	// Load and configure the connection pool settings
+	poolConfig, err := pgxpool.ParseConfig(targetDSN)
+	if err != nil {
+		return nil, fmt.Errorf("failed to parse database config: %v", err)
+	}
+
+	// Connection pool settings (move to config file)
+	poolConfig.MaxConns = 20                        // Max concurrent connections
+	poolConfig.MinConns = 5                         // Minimum idle connections
+	poolConfig.HealthCheckPeriod = 30 * time.Second // Health check interval
+	poolConfig.MaxConnLifetime = 30 * time.Minute   // Max lifetime before replacing a connection
+	poolConfig.MaxConnIdleTime = 5 * time.Minute    // Close idle connections after 5 min
+
+	// Create the actual connection pool with the configured settings
+	pool, err := pgxpool.NewWithConfig(ctx, poolConfig)
 	if err != nil {
 		return nil, fmt.Errorf("failed to connect to target database: %v", err)
 	}

@@ -1,0 +1,13 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    schema:
+      - "folderA/folderA_schema.sql"
+    queries:
+      - "folderA/folderA_query.sql"
+    gen:
+      go:
+        package: "dbal"
+        out: "../dbal"
+        sql_package: "pgx/v5"
+        output_models_file_name: "dbmodels.go"

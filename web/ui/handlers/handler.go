@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	logs "gms/pkg/logger"
+	logs "gobp/pkg/logger"
 	"html/template"
 	"path/filepath"
 
@@ -16,6 +16,7 @@ func IndexHandler(c *gin.Context) {
 	tmpl, err := template.ParseFiles(filepath.Join(viper.GetString("app.uiTemplates"), "index.html"))
 	if err != nil {
 		l.Sugar().Errorf("parse template failed", err)
+		RenderErrorTemplate(c, "Failed to parse form", err)
 		return
 	}
 

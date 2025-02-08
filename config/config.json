@@ -1,10 +1,10 @@
 {
-  "logger":{
-    "filepath":"gms.logs",
-    "level":"debug"
+  "logger": {
+    "filepath": "goboilerplate.logs",
+    "level": "debug"
   },
-  "app":{
-    "port":"8080",
-    "uiTemplates":"client/ui/templates/"
+  "app": {
+    "port": "8080",
+    "uiTemplates": "web/ui/templates/"
   }
 }

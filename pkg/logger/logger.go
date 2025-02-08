@@ -4,7 +4,7 @@ package logs
 
 import (
 	"context"
-	constants "gms/constant"
+	constants "gobp/constant"
 	"os"
 
 	"github.com/spf13/viper"

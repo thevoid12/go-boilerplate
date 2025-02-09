@@ -1,0 +1,15 @@
+{"level":"info","ts":"2025-02-08T22:11:00.998+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-08T22:12:15.163+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-08T22:13:07.116+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-08T22:17:21.952+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-08T22:21:51.955+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-08T22:24:30.980+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-08T22:28:53.358+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-09T10:34:22.292+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-09T10:37:12.545+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-09T10:38:23.749+0530","caller":"go-boilerplate/main.go:65","msg":"failedERROR: relation \"test\" does not exist (SQLSTATE 42P01)"}
+{"level":"info","ts":"2025-02-09T10:41:20.279+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-09T10:42:56.948+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-09T10:45:54.795+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-09T10:46:00.786+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-09T10:54:55.560+0530","caller":"go-boilerplate/main.go:48","msg":"cache initialized successfully"}

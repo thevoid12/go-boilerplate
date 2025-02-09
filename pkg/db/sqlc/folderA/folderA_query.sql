@@ -14,3 +14,11 @@ UPDATE test
   bio = $3
 WHERE id = $1
 RETURNING *;
+
+-- name: CreateTest :one
+INSERT INTO test (
+  name, bio
+) VALUES (
+  $1, $2
+)
+RETURNING *;

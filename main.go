@@ -2,11 +2,15 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"gobp/web/routes"
 
 	dbpkg "gobp/pkg/db"
+	"gobp/pkg/db/dbal"
 	logs "gobp/pkg/logger"
 	"log"
+
+	"github.com/jackc/pgx/v5/pgtype"
 
 	"github.com/joho/godotenv"
 	"github.com/spf13/viper"
@@ -43,12 +47,28 @@ func main() {
 
 	l.Sugar().Info("cache initialized successfully")
 
-	db, err := dbpkg.InitDB()
+	dbConn, err := dbpkg.InitDB()
 	if err != nil {
 		log.Fatalf("Could not initialize database: %v", err)
 	}
-	defer db.Db.Close()
+	defer dbConn.Db.Close()
 
+	dBal := dbal.New(dbConn.Db)
+	_, err = dBal.CreateTest(ctx, dbal.CreateTestParams{
+		Name: "test-void",
+		Bio: pgtype.Text{
+			String: "this is a test",
+			Valid:  true,
+		},
+	})
+	if err != nil {
+		l.Sugar().Info("failed", err)
+	}
+	result, err := dBal.ListTest(ctx)
+	if err != nil {
+		l.Sugar().Info("failed")
+	}
+	fmt.Println(result)
 	route := routes.Initialize(ctx, l)
 	route.Run(":" + viper.GetString("app.port"))
 }

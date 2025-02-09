@@ -5,7 +5,8 @@
 - viper
 - go
 - goose (migration) https://www.youtube.com/watch?v=fA8QK69zwlw
-- 
+- htmx https://htmx.org/docs/
+
 ## for pgsql
 - first install pgsql in your machine
 mac: brew install postgresql

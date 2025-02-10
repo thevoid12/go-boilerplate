@@ -31,7 +31,7 @@ func Initialize(ctx context.Context, l *zap.Logger) (router *gin.Engine) {
 	router.GET("/test", handlers.IndexHandler) // without middleware
 	router.GET("/", handlers.IndexHandler)
 	router.GET("/about", handlers.AboutHandler)
-	router.GET("/message", handlers.MessageHandler)
+	//	router.GET("/message", handlers.MessageHandler)
 
 	//auth group sets the context and calls auth middleware
 	rAuth := router.Group("/auth")

@@ -1,66 +1,33 @@
 package handlers
 
 import (
-	"fmt"
 	"html/template"
-	"path/filepath"
-	"sync"
+	"log"
 
 	"github.com/gin-gonic/gin"
 )
 
-// TemplateHandler manages template parsing and execution
-type TemplateHandler struct {
-	templates map[string]*template.Template
-	mutex     sync.RWMutex
-	baseDir   string
-}
-
-// NewTemplateHandler creates a new template handler
-func NewTemplateHandler(baseDir string) *TemplateHandler {
-	return &TemplateHandler{
-		templates: make(map[string]*template.Template),
-		baseDir:   baseDir,
+// RenderTemplate is a helper function to render templates with layout.html
+func RenderTemplate(c *gin.Context, pageTemplate string, data gin.H) {
+	// Define the paths to the layout and page templates
+	templatePaths := []string{
+		"web/ui/templates/layout.html",
+		"web/ui/templates/" + pageTemplate,
 	}
-}
 
-// LoadTemplates preloads all templates
-func (th *TemplateHandler) LoadTemplates() error {
-	layouts, err := filepath.Glob(filepath.Join(th.baseDir, "layouts/*.html"))
+	// Parse the templates
+	tmpl, err := template.ParseFiles(templatePaths...)
 	if err != nil {
-		return err
+		log.Println("ParseFiles failed:", err)
+		RenderErrorTemplate(c, "Internal server error occurred", err)
+		return
 	}
 
-	pages, err := filepath.Glob(filepath.Join(th.baseDir, "pages/*.html"))
+	// Execute the layout template, which will pull the content block from the page template
+	err = tmpl.ExecuteTemplate(c.Writer, "layout.html", data)
 	if err != nil {
-		return err
+		log.Println("ExecuteTemplate failed:", err)
+		RenderErrorTemplate(c, "Internal server error occurred", err)
+		return
 	}
-
-	// Load each page template with the base layout
-	for _, page := range pages {
-		name := filepath.Base(page)
-		tmpl, err := template.ParseFiles(append(layouts, page)...)
-		if err != nil {
-			return err
-		}
-
-		th.mutex.Lock()
-		th.templates[name] = tmpl
-		th.mutex.Unlock()
-	}
-
-	return nil
-}
-
-// Render executes the template and writes to response
-func (th *TemplateHandler) Render(c *gin.Context, name string, data interface{}) error {
-	th.mutex.RLock()
-	tmpl, exists := th.templates[name]
-	th.mutex.RUnlock()
-
-	if !exists {
-		return fmt.Errorf("template %s not found", name)
-	}
-
-	return tmpl.Execute(c.Writer, data)
 }

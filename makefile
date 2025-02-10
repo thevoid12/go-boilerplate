@@ -2,8 +2,8 @@
 include .env
 export $(shell sed 's/=.*//' .env)
 
-# Shell and Make defaults
-SHELL				:= /bin/bash
+# # Shell and Make defaults
+# SHELL				:= /bin/bash
 
 migrate-up:
 	@echo "**************************** migration up ***************************************"

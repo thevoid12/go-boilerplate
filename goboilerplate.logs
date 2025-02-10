@@ -279,3 +279,134 @@
 {"level":"info","ts":"2025-02-09T23:17:06.153+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
 {"level":"info","ts":"2025-02-09T23:17:06.153+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
 {"level":"info","ts":"2025-02-09T23:17:06.153+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T13:58:24.219+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T13:58:24.219+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T13:58:24.220+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T13:58:24.220+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T13:58:24.220+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T13:58:24.220+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T13:58:24.220+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T13:58:24.220+0530","caller":"routes/routes.go:42","msg":"Route: GET /message"}
+{"level":"info","ts":"2025-02-10T13:58:24.220+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T13:58:24.220+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T13:58:24.220+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T15:30:23.809+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T15:30:23.810+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T15:30:23.811+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T15:30:23.811+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T15:30:23.811+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T15:30:23.811+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T15:30:23.811+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T15:30:23.811+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T15:30:23.811+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T15:30:23.811+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T15:31:17.226+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T15:31:17.226+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T15:31:17.227+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T15:31:17.227+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T15:31:17.227+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T15:31:17.227+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T15:31:17.227+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T15:31:17.227+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T15:31:17.227+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T15:31:17.227+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T22:02:29.286+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T22:02:29.286+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T22:02:29.287+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T22:02:29.287+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:02:29.287+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T22:02:29.287+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T22:02:29.287+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T22:02:29.287+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:02:29.287+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T22:02:29.287+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T22:04:08.340+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T22:04:08.340+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T22:04:08.341+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T22:04:08.341+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:04:08.342+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T22:04:08.342+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T22:04:08.342+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T22:04:08.342+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:04:08.342+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T22:04:08.342+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T22:07:13.705+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T22:07:13.705+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T22:07:13.706+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T22:07:13.706+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:07:13.706+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T22:07:13.706+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T22:07:13.706+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T22:07:13.706+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:07:13.706+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T22:07:13.706+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T22:23:10.850+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T22:23:10.850+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T22:23:10.851+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T22:23:10.851+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:23:10.851+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T22:23:10.851+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T22:23:10.851+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T22:23:10.851+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:23:10.851+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T22:23:10.851+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T22:25:58.571+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T22:25:58.572+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T22:25:58.572+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T22:25:58.572+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:25:58.572+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T22:25:58.572+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T22:25:58.572+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T22:25:58.572+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:25:58.572+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T22:25:58.572+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T22:30:24.091+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T22:30:24.091+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T22:30:24.092+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T22:30:24.092+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:30:24.092+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T22:30:24.092+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T22:30:24.092+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T22:30:24.092+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:30:24.092+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T22:30:24.092+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T22:31:29.970+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T22:31:29.970+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T22:31:29.971+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T22:31:29.971+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:31:29.971+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T22:31:29.971+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T22:31:29.971+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T22:31:29.971+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:31:29.971+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T22:31:29.971+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T22:33:01.671+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T22:33:01.671+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T22:33:01.672+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T22:33:01.672+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:33:01.672+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T22:33:01.672+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T22:33:01.672+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T22:33:01.672+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T22:33:01.672+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T22:33:01.672+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T23:00:47.102+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T23:00:47.102+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T23:00:47.103+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T23:00:47.103+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T23:00:47.103+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T23:00:47.103+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T23:00:47.103+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T23:00:47.103+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T23:00:47.104+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T23:00:47.104+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}
+{"level":"info","ts":"2025-02-10T23:02:29.448+0530","caller":"go-boilerplate/main.go:43","msg":"cache initialized successfully"}
+{"level":"info","ts":"2025-02-10T23:02:29.448+0530","caller":"routes/routes.go:15","msg":"Initializing logger"}
+{"level":"info","ts":"2025-02-10T23:02:29.449+0530","caller":"routes/routes.go:42","msg":"Route: GET /"}
+{"level":"info","ts":"2025-02-10T23:02:29.449+0530","caller":"routes/routes.go:42","msg":"Route: GET /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T23:02:29.449+0530","caller":"routes/routes.go:42","msg":"Route: GET /about"}
+{"level":"info","ts":"2025-02-10T23:02:29.449+0530","caller":"routes/routes.go:42","msg":"Route: GET /sec/home"}
+{"level":"info","ts":"2025-02-10T23:02:29.449+0530","caller":"routes/routes.go:42","msg":"Route: GET /test"}
+{"level":"info","ts":"2025-02-10T23:02:29.449+0530","caller":"routes/routes.go:42","msg":"Route: HEAD /assets/*filepath"}
+{"level":"info","ts":"2025-02-10T23:02:29.449+0530","caller":"routes/routes.go:42","msg":"Route: POST /sec/checkmail"}
+{"level":"info","ts":"2025-02-10T23:02:29.449+0530","caller":"routes/routes.go:42","msg":"Route: POST /auth/gobp/deactivate/:id/:isactive"}

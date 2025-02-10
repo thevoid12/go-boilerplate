@@ -1,10 +1,6 @@
 package handlers
 
 import (
-	"log"
-	"net/http"
-	"path/filepath"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -27,27 +23,39 @@ import (
 // 	}
 // }
 
-// IndexHandler handles the home page
+// // IndexHandler handles the home page
+// func IndexHandler(c *gin.Context) {
+// 	c.HTML(http.StatusOK, "layout.html", gin.H{
+// 		"title": "Home Page",
+// 	})
+// }
+
+// // AboutHandler handles the about page
+// func AboutHandler(c *gin.Context) {
+// 	files, err := filepath.Glob("web/ui/templates/*")
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+// 	log.Println("**************************")
+// 	log.Println("Loaded templates:", files)
+// 	c.HTML(http.StatusOK, "about.html", gin.H{
+// 		"title": "About Page",
+// 	})
+// }
+
+// // MessageHandler handles HTMX request for message
+// func MessageHandler(c *gin.Context) {
+// 	c.String(http.StatusOK, "Hello from the server!")
+// }
+
 func IndexHandler(c *gin.Context) {
-	c.HTML(http.StatusOK, "layout.html", gin.H{
+	RenderTemplate(c, "index.html", gin.H{
 		"title": "Home Page",
 	})
 }
 
-// AboutHandler handles the about page
 func AboutHandler(c *gin.Context) {
-	files, err := filepath.Glob("web/ui/templates/*")
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println("**************************")
-	log.Println("Loaded templates:", files)
-	c.HTML(http.StatusOK, "about.html", gin.H{
+	RenderTemplate(c, "about.html", gin.H{
 		"title": "About Page",
 	})
-}
-
-// MessageHandler handles HTMX request for message
-func MessageHandler(c *gin.Context) {
-	c.String(http.StatusOK, "Hello from the server!")
 }

@@ -3,16 +3,18 @@ package handlers
 import (
 	"html/template"
 	"log"
+	"path/filepath"
 
 	"github.com/gin-gonic/gin"
+	"github.com/spf13/viper"
 )
 
 // RenderTemplate is a helper function to render templates with layout.html
 func RenderTemplate(c *gin.Context, pageTemplate string, data gin.H) {
 	// Define the paths to the layout and page templates
 	templatePaths := []string{
-		"web/ui/templates/layout.html",
-		"web/ui/templates/" + pageTemplate,
+		filepath.Join(viper.GetString("app.uiTemplates"), "layout.html"),
+		filepath.Join(viper.GetString("app.uiTemplates"), "layout.html"),
 	}
 
 	// Parse the templates

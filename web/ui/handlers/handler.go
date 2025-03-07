@@ -1,6 +1,8 @@
 package handlers
 
 import (
+	logs "gobp/pkg/logger"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -49,6 +51,9 @@ import (
 // }
 
 func IndexHandler(c *gin.Context) {
+	ctx := c.Request.Context()  // Get the request context which has logger
+	l := logs.GetLoggerctx(ctx) // Get the logger from the context
+	l.Info("this is a test info")
 	RenderTemplate(c, "index.html", gin.H{
 		"title": "Home Page",
 	})
